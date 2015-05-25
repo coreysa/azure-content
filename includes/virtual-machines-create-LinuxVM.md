@@ -5,6 +5,8 @@ On the command bar, click **New**.
 
 3. From **Choose an Image**, select an image from one of the lists. (The available images may differ depending on the subscription you're using.) Click the arrow to continue.
 
+	![Select VM](./media/virtual-machines-create-LinuxVM/SelectLinuxVM.png)
+
 4. If multiple versions of the image are available, in **Version Release Date**, pick the version you want to use.
 
 5. In **Virtual Machine Name**, type the name that you want to use. For this virtual machine, type **MyTestVM1**.
@@ -17,7 +19,7 @@ On the command bar, click **New**.
 
 9. You can place virtual machines together in the cloud service, but for this tutorial, you're only creating a single virtual machine. To do this, select **Create a new cloud service**.
 
-10. In **Cloud Service DNS Name**, type a name that uses between 3 and 24 lowercase letters and numbers. You'll need to come up with your own cloud service name because it must be unique in Azure. The clouse service name becomes part of the URI that is used to contact the virtual machine through the cloud service.
+10. In **Cloud Service DNS Name**, type a name that uses between 3 and 24 lowercase letters and numbers. You'll need to come up with your own cloud service name because it must be unique in Azure. The cloud service name becomes part of the URI that is used to contact the virtual machine through the cloud service.
 
 11. In **Region/Affinity Group/Virtual Network**, select where you want to locate the virtual machine.
 

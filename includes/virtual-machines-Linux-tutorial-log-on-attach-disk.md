@@ -2,26 +2,24 @@
 
 ## <a id="logon"> </a>How to log on to the virtual machine after you create it ##
 
-To manage the settings of the virtual machine and the applications that run on the machine, you can use an SSH client. To do this, you must install an SSH client on your computer that you want to use to access the virtual machine. There are many SSH client programs that you can choose from. The following are possible choices:
+To manage the settings of the virtual machine and the applications that run on the machine, you can use an SSH client. The following are possible choices:
 
-- If you are using a computer that is running a Windows operating system, you might want to use an SSH client such as PuTTY. For more information, see [PuTTY Download](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 - If you are using a computer that is running a Linux operating system, you might want to use an SSH client such as OpenSSH. For more information, see [OpenSSH](http://www.openssh.org/).
+- If you are using a computer that is running a Windows operating system, you might want to use an SSH client such as PuTTY. For more information, see [PuTTY Download](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 This tutorial shows you how to use the PuTTY program to access the virtual machine.
 
 1. Find the **Host Name** and **Port information** from the Management Portal. You can find the information that you need from the dashboard of the virtual machine. Click the virtual machine name and look for the **SSH Details** in the **Quick Glance** section of the dashboard.
 
-	![Find SSH details](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/SSHdetails.png)
+	![Find SSH details](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/SSHdetailsv2.png)
 
-2. Open the PuTTY program.
+2. Open your preferred SSH program.
 
-3. Enter the **Host Name** and the **Port information** that you collected from the dashboard, and then click **Open**.
-
-	![Enter the host name and port information](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/putty.png)
+3. Enter the **Public Virtual IP** and the **Port information** that you collected from the dashboard.
 
 4. Log on to the virtual machine using the NewUser1 account that was added when you created the virtual machine.
 
-	![Log on to the new virtual machine](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/sshlogin.png)
+	![Enter the IP and port information](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/sshtool.png)
 
 	You can now work with the virtual machine just as you would with any other server.
 
@@ -42,7 +40,7 @@ On Linux, the Resource Disk is typically managed by the Azure Linux Agent and au
 	
 	The **Attach Empty Disk** dialog box appears.
 
-	![Define disk details](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/attachnewdisklinux.png)
+	![Define disk details](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/attachnewdisklinuxv2.png)
 
 4. The **Virtual Machine Name**, **Storage Location**, and **File Name** are already defined for you. All you have to do is enter the size that you want for the disk. Type **5** in the **Size** field.
 
@@ -52,9 +50,9 @@ On Linux, the Resource Disk is typically managed by the Azure Linux Agent and au
 
 6. You can verify that the data disk is successfully attached to the virtual machine by looking at the dashboard. Click the name of the virtual machine to display the dashboard.
 
-	The number of disks is now 2 for the virtual machine and the disk that you attached is listed in the **Disks** table.
+	The disk that you attached is listed in the **Disks** table.
 
-	![Attach disk success](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/attachemptysuccess.png)
+	![Attach disk success](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/attachemptysuccessv2.png)
 
 
 The data disk that you just attached to the virtual machine is offline and not initialized after you add it. You must log on to the machine and initialize the disk to use it for storing data.
