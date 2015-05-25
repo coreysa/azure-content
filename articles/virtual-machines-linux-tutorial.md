@@ -13,11 +13,7 @@
 	ms.tgt_pltfrm="vm-linux"
 	ms.devlang="na"
 	ms.topic="hero-article"
-<<<<<<< HEAD
-	ms.date="05/25/2015"
-=======
 	ms.date="04/03/2015"
->>>>>>> upstream/master
 	ms.author="kathydav"/>
 
 # Create a Virtual Machine Running Linux
