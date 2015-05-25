@@ -11,7 +11,7 @@ This tutorial shows you how to use the PuTTY program to access the virtual machi
 
 1. Find the **Host Name** and **Port information** from the Management Portal. You can find the information that you need from the dashboard of the virtual machine. Click the virtual machine name and look for the **SSH Details** in the **Quick Glance** section of the dashboard.
 
-	![Find SSH details](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/SSHdetailsv2.png)
+	![Find SSH details](./media/virtual-machines-Linux-tutorial-log-on-attach-disk/portalSSHdetails.png)
 
 2. Open your preferred SSH program.
 
