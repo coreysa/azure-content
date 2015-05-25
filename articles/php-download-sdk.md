@@ -1,8 +1,24 @@
-<properties title="" pageTitle="Download the Azure SDK for PHP" metaKeywords="" description="Learn how to download and install the Azure SDK for PHP." documentationCenter="php" services="" solutions="web" authors="tfitzmac" manager="wpickett" editor=""/>
+<properties 
+	pageTitle="Download the Azure SDK for PHP" 
+	description="Learn how to download and install the Azure SDK for PHP." 
+	documentationCenter="php" 
+	services="" 
+	authors="tfitzmac" 
+	manager="wpickett" 
+	editor=""/>
 
-<tags ms.service="multiple" ms.workload="na" ms.tgt_pltfrm="na" ms.devlang="PHP" ms.topic="article" ms.date="10/21/2014" ms.author="tomfitz" />
+<tags 
+	ms.service="multiple" 
+	ms.workload="na" 
+	ms.tgt_pltfrm="na" 
+	ms.devlang="PHP" 
+	ms.topic="article" 
+	ms.date="03/20/2015" 
+	ms.author="tomfitz"/>
 
 #Download the Azure SDK for PHP
+
+## Overview
 
 The Azure SDK for PHP includes components that allow you to develop, deploy, and manage PHP applications for Azure. Specifically, the Azure SDK for PHP includes the following:
 
@@ -34,18 +50,20 @@ For information about how to use the PHP Client Libraries for Azure, see [How to
 
 2. Create a file named **composer.json** in the root of your project and add the following code to it:
 
-		{
-			"require": {
-				"microsoft/windowsazure": "*"
-			},			
-			"repositories": [
-				{
-					"type": "pear",
-					"url": "http://pear.php.net"
-				}
-			],
-			"minimum-stability": "dev"
-		}
+        {
+            "repositories": [
+                {
+                    "type": "pear",
+                    "url": "http://pear.php.net"
+                }
+            ],
+            "require": {
+                "pear-pear.php.net/mail_mime" : "*",
+                "pear-pear.php.net/http_request2" : "*",
+                "pear-pear.php.net/mail_mimedecode" : "*",
+                "microsoft/windowsazure": "*"
+            }
+        }
 
 3. Download **[composer.phar][composer-phar]** in your project root.
 
